@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Soma - Input - CSS/Bootstrap/jQuery</title>
+
+        <link rel="stylesheet" href="bootstrap.css">
+
+        <script src="jquery-3.2.1.js"></script>
+        <script src="tratamentoimc.js"></script>
+
+    </head>
+    <body>
+      <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Atividade para Entrega</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="Hub.html">Home</a></li>
+            <li><a href="didatica.html">Didática</a></li>
+            <li><a href="escala.html">Escala</a></li>
+            <li class="active"><a href="imc.html">IMC</a><span class="sr-only">(current)</span></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+        <div class="container">
+
+            <div class="jumbotron text-center">
+                <h2>Cálculo IMC</h2>
+            </div>
+
+        <form name="dados">
+
+            <div id="Pes" class="form-group">
+                <label for="peso">Peso:</label>
+                <input name="peso" type="text" class="form-control">
+
+                <div class="alert alert-danger" style="display: none" id="alertaP">
+                    Informe o peso corretamente.
+                </div>
+
+            </div>
+
+            <div id="Alt" class="form-group">
+                <label for="altura">Altura:</label>
+                <input name="altura" type="text" class="form-control">
+
+                <div class="alert alert-danger" style="display: none" id="alertaA">
+                    Informe a altura corretamente.
+                </div>
+
+            </div>
+
+            <div id="grupoRes" class="form-group">
+                <label for="resultado">IMC:</label>
+                <input name="resultado" type="text" disabled="disabled" class="form-control">
+            </div>
+
+            <button type="button" name="calculo" class="btn btn-primary">Calcular</button>
+            <button type="reset" class="btn btn-warning">Limpar</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
+    </body>
+</html>
