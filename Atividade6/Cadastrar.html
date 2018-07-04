@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap.js"></script>
+		<script src="valida.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Atividade 5</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Principal.html">Principal</a></li>
+        <li class="active"><a href="Cadastrar.html">Cadastrar<span class="sr-only">(current)</span></a></li>
+				<li><a href="Listar.html">Listar</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<h1>Dados de Cadastro</h1>
+	<form method="get" action="Validar.html">
+		<div class="form-group" id="nome">
+      <label>Nome : </label>
+      <input type="text" name="nome" id="nome"  /><br />
+      <div class="alert alert-danger" style="display: none" id="alertaNome">
+                    Campo obrigatório.
+      </div>
+    </div><br>
+
+		<div class="form-group" id="telefone">
+      <label>Telefone : </label>
+      <input type="text" name="telefone" id="telefone"  /><br />
+      <div class="alert alert-danger" style="display: none" id="alertaTelefone">
+                    Campo obrigatório.
+      </div>
+    </div><br>
+
+		<div class="form-group" id="cpf">
+      <label>CPF : </label>
+      <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="Utilize o formato 999.999.999-99"  /><br />
+      <div class="alert alert-danger" style="display: none" id="alertaCpf">
+                    Campo obrigatório.
+      </div>
+    </div><br>
+
+        <label>Cidade:</label>
+        <select name="cidade">
+        <option value="0" selected>Selecione</option>
+        <option value="1">João Monlevade</option>
+        <option value="2">Itabira</option>
+        <option value="3">Santa Bárbara</option>
+        <option value="4">Alvinópolis</option>
+        <option value="5">Itaúna</option>
+        <option value="6">Belo Horizonte</option>
+      	</select><br>
+
+				<div class="form-group" id="enredeco">
+		      <label>Endereço : </label>
+		      <input type="text" name="endereco" id="endereco" placeholder="Digite o Endereço"  /><br />
+		      <div class="alert alert-danger" style="display: none" id="alertaEnd">
+		                    Campo obrigatório.
+		      </div>
+		    </div><br>
+
+				<div class="form-group" id="cep">
+		      <label>CEP : </label>
+		      <input type="text" name="cep" id="cep" placeholder="Digite o CEP"  /><br />
+		      <div class="alert alert-danger" style="display: none" id="alertaCep">
+		                    Campo obrigatório.
+		      </div>
+		    </div><br>
+
+
+        <label for="genero">Gênero:</label><br>
+        <input type="radio" name="genero" id="feminino" value="F">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" name="genero" id="masculino" value="M">
+        <label for="masculino">Masculino</label><br>
+
+        <h2>Aplicativos de Redes Sociais que o usuário possui instalados:</h2>
+
+        <input type="checkbox" name="area" id="web">
+        <label for="web">WhatsApp</label><br>
+
+        <input type="checkbox" name="area" id="web">
+        <label for="web">Facebook</label><br>
+
+        <input type="checkbox" name="area" id="web">
+        <label for="web">Line</label><br>
+
+        <input type="checkbox" name="area" id="web">
+        <label for="web">Viber</label><br>
+
+        <input type="submit" class="btn btn-primary" value="Cadastrar">
+        <input type="reset" class="btn btn-info" value="Limpar">
+
+
+
+	</form>
+</body>
+</html>
