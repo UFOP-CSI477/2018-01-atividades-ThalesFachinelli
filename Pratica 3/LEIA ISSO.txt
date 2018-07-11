@@ -1,0 +1,7 @@
+Devido alguns problemas com tempo a função de login não foi implementada o que impediu
+a implementação das funções da área de paciente, todas outras funções estão implementadas
+para utilizar as mesmas use os links da pagina inicial e seguem abaixo lista dos urls de cada uma das áreas:
+
+admin - /adminhome
+operador - /operadorhome
+paciente - /pacientehome
